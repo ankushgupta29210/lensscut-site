@@ -4,15 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LensScut Photography</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
 <header>
-<nav class="container nav">
+<nav class="nav">
 <h2 class="logo">LensScut</h2>
 <div>
 <a href="index.html">Home</a>
@@ -32,32 +30,27 @@
 </div>
 </section>
 
-<section class="container section">
+<section class="container section fade-in">
 <h2 class="section-title">Why LensScut</h2>
-<p class="center-text">
-Every moment happens once. We make sure you can feel it forever.
-From intimate portraits to grand celebrations — we capture emotions, not poses.
-</p>
-</section>
-
-<section class="container section grid-3">
-<div class="card">
-<h3>Emotion First</h3>
-<p>We capture real feelings — not staged moments.</p>
-</div>
-<div class="card">
-<h3>Creative Vision</h3>
-<p>Every shoot is designed to feel unique and cinematic.</p>
-</div>
-<div class="card">
-<h3>Premium Quality</h3>
-<p>High-end editing and storytelling in every frame.</p>
-</div>
+<p class="center-text">Every moment happens once. We make sure you can feel it forever.</p>
 </section>
 
 <footer>
 <p>&copy; 2026 LensScut Photography</p>
 </footer>
 
+<script>
+const elements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+elements.forEach(el => {
+const position = el.getBoundingClientRect().top;
+if(position < window.innerHeight - 100){
+el.classList.add('show');
+}
+});
+});
+</script>
+
 </body>
 </html>
+
