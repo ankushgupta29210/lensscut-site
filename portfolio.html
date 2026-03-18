@@ -3,41 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | LensScut</title>
+<title>Portfolio</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-<header>
-<nav class="container nav">
-<h2 class="logo">LensScut</h2>
-<div>
-<a href="index.html">Home</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
-</header>
+<header><nav class="nav"><h2 class="logo">LensScut</h2></nav></header>
 
 <section class="container section">
 <h2 class="section-title">Portfolio</h2>
-
 <div class="grid">
-<img src="images/p1.jpg">
-<img src="images/p2.jpg">
-<img src="images/p3.jpg">
-<img src="images/p4.jpg">
-<img src="images/p5.jpg">
-<img src="images/p6.jpg">
+<img src="images/p1.jpg" onclick="openModal(this.src)">
+<img src="images/p2.jpg" onclick="openModal(this.src)">
+<img src="images/p3.jpg" onclick="openModal(this.src)">
+<img src="images/p4.jpg" onclick="openModal(this.src)">
 </div>
-
 </section>
 
-<footer>
-<p>&copy; 2026 LensScut Photography</p>
-</footer>
+<div id="modal" class="modal" onclick="closeModal()">
+<img id="modal-img">
+</div>
+
+<script>
+function openModal(src){
+document.getElementById('modal').style.display='flex';
+document.getElementById('modal-img').src=src;
+}
+function closeModal(){
+document.getElementById('modal').style.display='none';
+}
+</script>
 
 </body>
 </html>
+
