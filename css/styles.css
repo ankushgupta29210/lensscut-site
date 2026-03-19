@@ -6,6 +6,13 @@ color:#fff;
 }
 
 /* NAVBAR */
+.container {
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+/* NAVBAR */
 .nav {
 display:flex;
 justify-content:space-between;
@@ -14,9 +21,9 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 8%;
+padding:20px 0;
 background:rgba(0,0,0,0.6);
-backdrop-filter:blur(12px);
+backdrop-filter: blur(10px);
 z-index:1000;
 }
 
@@ -26,13 +33,14 @@ font-size:22px;
 font-weight:700;
 }
 
+/* links container */
 .nav-links {
 display:flex;
-align-items:center;
+gap:30px;
 }
 
+/* links */
 .nav-links a {
-margin-left:25px;
 color:#fff;
 text-decoration:none;
 font-weight:500;
@@ -54,6 +62,7 @@ transition:0.3s;
 .nav-links a:hover::after {
 width:100%;
 }
+
 
 /* HERO */
 .hero {
