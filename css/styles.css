@@ -5,11 +5,15 @@ background: radial-gradient(circle at top, #1a1a1a, #000);
 color:#fff;
 }
 
-.container {
+.nav-container {
 max-width:1200px;
 margin:auto;
-padding:0 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
 }
+
 
 /* NAVBAR */
 .nav {
@@ -39,6 +43,11 @@ gap:30px;
 }
 
 /* links */
+.nav-links {
+display:flex;
+gap:30px;
+}
+
 .nav-links a {
 color:#fff;
 text-decoration:none;
@@ -46,7 +55,6 @@ font-weight:500;
 position:relative;
 }
 
-/* underline animation */
 .nav-links a::after {
 content:'';
 position:absolute;
@@ -61,6 +69,7 @@ transition:0.3s;
 .nav-links a:hover::after {
 width:100%;
 }
+
 
 
 /* HERO */
