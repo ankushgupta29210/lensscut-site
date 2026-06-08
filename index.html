@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lensscut | Professional Photography</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <a href="index.html" class="brand">Lensscut.</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
@@ -25,17 +29,21 @@
     </header>
 
     <main>
-        <section class="hero fade-in">
+        <section class="hero">
             <div class="hero-content">
-                <h1>Capturing moments that tell your story.</h1>
-                <p>Professional photography services blending artistry with raw emotion.</p>
-                <a href="portfolio.html" class="btn-primary">View Portfolio</a>
+                <h1 class="animate-up delay-1">Capturing moments <br>that tell your story.</h1>
+                <p class="animate-up delay-2">Professional photography services blending modern artistry with raw, authentic emotion.</p>
+                <div class="animate-up delay-3">
+                    <a href="portfolio.html" class="btn-primary">Explore Portfolio</a>
+                </div>
             </div>
         </section>
 
-        <section class="quick-about fade-in">
-            <h2>The Lensscut Vision</h2>
-            <p>We don't just take pictures; we freeze time. Our goal is to make your most important moments unforgettable through high-quality, story-driven photography.</p>
+        <section class="quick-about fade-on-scroll">
+            <div class="about-container">
+                <h2 class="section-title">The Lensscut Vision</h2>
+                <p>We don't just take pictures; we freeze time. Our goal is to make your most important moments unforgettable through high-quality, story-driven photography that transcends generations.</p>
+            </div>
         </section>
     </main>
 
@@ -44,6 +52,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
 </body>
 </html>
